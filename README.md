@@ -1,7 +1,8 @@
 # Atmega Standalone 
 
-In this repository you can my photos and schematics of my Atmega Board that I build on a prototype board.
-Also you can find a tutorial that I wrote for Atmega Standalone
+In this repository you can learn how to use Atmega328 standalone without Arduino board.
+
+Also you will find photos and schematics of my Atmega Board that I build on a prototype board.
 
 My Atmega Board 
 
@@ -9,4 +10,4 @@ My Atmega Board
 
 Schematic
 
-![](photos/Schematic.png )
+![](photos/Schematic.png)

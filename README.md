@@ -4,4 +4,6 @@ In this repository you can my photos and schematics of my Atmega Board that I bu
 Also you can find a tutorial that I wrote for Atmega Standalone
 
 My Atmega Board
-![](photos/My atmega board.png)
+
+
+![](photos/My_atmega_board.jpg )

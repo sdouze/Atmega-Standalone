@@ -6,8 +6,6 @@ Also you will find photos and schematics of my Atmega Board that I build on a pr
 
 My Atmega Board 
 
-
-
 Schematic
 
-![](photos/Schematic.png)
+![](Photos/Schematic.png)

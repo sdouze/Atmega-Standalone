@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FTDI_Connector
+D 6pin FTDI Symbol
+K connector
+F ~
+$ENDCMP
+#
+#End Doc Library

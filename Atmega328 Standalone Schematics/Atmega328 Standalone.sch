@@ -36,17 +36,6 @@ F 3 "~" H 7500 1300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x06_Female J1
-U 1 1 5E10F2BD
-P 7550 5500
-F 0 "J1" H 7578 5476 50  0000 L CNN
-F 1 "FTDI" H 7578 5385 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7550 5500 50  0001 C CNN
-F 3 "~" H 7550 5500 50  0001 C CNN
-	1    7550 5500
-	1    0    0    -1  
-$EndComp
-$Comp
 L dk_PMIC-Voltage-Regulators-Linear:L7805CV U2
 U 1 1 5E13FF9A
 P 8650 1500
@@ -145,7 +134,7 @@ F 3 "~" H 7050 5850 50  0001 C CNN
 	1    7050 5850
 	1    0    0    -1  
 $EndComp
-Text GLabel 7200 5300 0    50   Input ~ 0
+Text GLabel 6225 5300 0    50   Input ~ 0
 RESET
 Wire Wire Line
 	7050 5850 7050 5800
@@ -154,26 +143,24 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR010
 U 1 1 5E17FE6B
-P 6750 5700
-F 0 "#PWR010" H 6750 5550 50  0001 C CNN
-F 1 "+5V" H 6765 5873 50  0000 C CNN
-F 2 "" H 6750 5700 50  0001 C CNN
-F 3 "" H 6750 5700 50  0001 C CNN
-	1    6750 5700
+P 6750 5600
+F 0 "#PWR010" H 6750 5450 50  0001 C CNN
+F 1 "+5V" H 6765 5773 50  0000 C CNN
+F 2 "" H 6750 5600 50  0001 C CNN
+F 3 "" H 6750 5600 50  0001 C CNN
+	1    6750 5600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 5700 7350 5700
-Text GLabel 7200 5400 0    50   Input ~ 0
-RX
+	6750 5600 7350 5600
 Text GLabel 7200 5500 0    50   Input ~ 0
+RX
+Text GLabel 7200 5400 0    50   Input ~ 0
 TX
 Wire Wire Line
-	7200 5300 7350 5300
+	7200 5500 7350 5500
 Wire Wire Line
 	7200 5400 7350 5400
-Wire Wire Line
-	7200 5500 7350 5500
 Wire Wire Line
 	6750 1300 6750 1700
 $Comp
@@ -365,8 +352,8 @@ Wire Wire Line
 NoConn ~ 6550 3750
 NoConn ~ 6550 3650
 Wire Wire Line
-	7350 5600 7200 5600
-NoConn ~ 7200 5600
+	7350 5700 7200 5700
+NoConn ~ 7200 5700
 $Comp
 L power:+5V #PWR01
 U 1 1 5E12DE90
@@ -657,8 +644,6 @@ Text Notes 5550 2600 0    197  ~ 0
 Left Atmega Pins
 Text Notes 8350 2600 0    197  ~ 0
 Right Atmega Pins
-Text Notes 5550 5050 0    197  ~ 0
-FTDI Programmer\n(Using Arduino)
 Wire Notes Line
 	5500 4500 11250 4500
 Wire Notes Line
@@ -670,4 +655,32 @@ Wire Wire Line
 	7900 1850 8650 1850
 Wire Wire Line
 	6750 1300 7350 1300
+$Comp
+L Device:C C5
+U 1 1 5E705140
+P 6525 5300
+F 0 "C5" H 6640 5346 50  0000 L CNN
+F 1 "100nF" H 6640 5255 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 6563 5150 50  0001 C CNN
+F 3 "~" H 6525 5300 50  0001 C CNN
+	1    6525 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6375 5300 6225 5300
+Wire Wire Line
+	6675 5300 7350 5300
+$Comp
+L ftdi_connector:FTDI_Connector J1
+U 1 1 5E76B676
+P 7550 5500
+F 0 "J1" H 7578 5476 50  0000 L CNN
+F 1 "FTDI_Connector" H 7578 5385 50  0000 L CNN
+F 2 "" H 7550 5500 50  0001 C CNN
+F 3 "~" H 7550 5500 50  0001 C CNN
+	1    7550 5500
+	1    0    0    -1  
+$EndComp
+Text Notes 5550 5050 0    197  ~ 0
+FTDI Programmer\n(Using Arduino)
 $EndSCHEMATC
